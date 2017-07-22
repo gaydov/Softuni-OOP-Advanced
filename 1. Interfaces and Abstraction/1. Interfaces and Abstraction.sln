@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio 15
+VisualStudioVersion = 15.0.26430.16
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shapes", "Shapes\Shapes.csproj", "{8A4A14D1-2CE8-4AB4-9CFB-4E21CCF7AED9}"
 EndProject
@@ -18,6 +18,14 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BorderControl", "BorderControl\BorderControl.csproj", "{91A10120-6A2A-4CC5-89EA-217E1E9A1411}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BirthdayCelebrations", "BirthdayCelebrations\BirthdayCelebrations.csproj", "{BCB0A63E-0C06-4D7E-8B12-AB24C9D8FD44}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CollectionHierarchy", "CollectionHierarchy\CollectionHierarchy.csproj", "{043E7641-62EF-4560-B2D1-51AC1381A481}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FoodShortage", "FoodShortage\FoodShortage.csproj", "{2F497307-91F8-4B4E-9A41-12B83EB2512F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MilitaryElite", "MilitaryElite\MilitaryElite.csproj", "{02194555-6903-47EA-AA84-E69FE40B3F2A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExplicitInterfaces", "ExplicitInterfaces\ExplicitInterfaces.csproj", "{FBF039F5-7C17-4908-B9FA-19A37D2E4136}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -57,6 +65,22 @@ Global
 		{BCB0A63E-0C06-4D7E-8B12-AB24C9D8FD44}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BCB0A63E-0C06-4D7E-8B12-AB24C9D8FD44}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BCB0A63E-0C06-4D7E-8B12-AB24C9D8FD44}.Release|Any CPU.Build.0 = Release|Any CPU
+		{043E7641-62EF-4560-B2D1-51AC1381A481}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{043E7641-62EF-4560-B2D1-51AC1381A481}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{043E7641-62EF-4560-B2D1-51AC1381A481}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{043E7641-62EF-4560-B2D1-51AC1381A481}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2F497307-91F8-4B4E-9A41-12B83EB2512F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2F497307-91F8-4B4E-9A41-12B83EB2512F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2F497307-91F8-4B4E-9A41-12B83EB2512F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2F497307-91F8-4B4E-9A41-12B83EB2512F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{02194555-6903-47EA-AA84-E69FE40B3F2A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{02194555-6903-47EA-AA84-E69FE40B3F2A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{02194555-6903-47EA-AA84-E69FE40B3F2A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{02194555-6903-47EA-AA84-E69FE40B3F2A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FBF039F5-7C17-4908-B9FA-19A37D2E4136}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FBF039F5-7C17-4908-B9FA-19A37D2E4136}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FBF039F5-7C17-4908-B9FA-19A37D2E4136}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FBF039F5-7C17-4908-B9FA-19A37D2E4136}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
