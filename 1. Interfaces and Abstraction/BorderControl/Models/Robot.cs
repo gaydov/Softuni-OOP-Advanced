@@ -1,6 +1,4 @@
-﻿using System;
-
-public class Robot : IIndividual
+﻿public class Robot : IIndividual
 {
     public Robot(string model, string id)
     {

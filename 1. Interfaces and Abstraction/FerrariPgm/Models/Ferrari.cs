@@ -1,6 +1,4 @@
-﻿using System;
-
-public class Ferrari : ICar
+﻿public class Ferrari : ICar
 {
     private const string model = "488-Spider";
 

@@ -42,7 +42,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Citizen.cs" />
+    <Compile Include="Models\Citizen.cs" />
     <Compile Include="Interfaces\INameable.cs" />
     <Compile Include="Interfaces\IPerson.cs" />
     <Compile Include="Interfaces\IResident.cs" />

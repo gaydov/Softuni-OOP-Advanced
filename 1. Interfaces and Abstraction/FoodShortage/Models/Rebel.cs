@@ -1,6 +1,4 @@
-﻿using System;
-
-public class Rebel : IPerson
+﻿public class Rebel : IPerson
 {
     public Rebel(string name, int age, string group)
     {

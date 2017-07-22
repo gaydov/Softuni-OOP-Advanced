@@ -1,6 +1,4 @@
-﻿using System.Collections.Generic;
-
-namespace CollectionHierarchy.Interfaces
+﻿namespace CollectionHierarchy.Interfaces
 {
     public interface IAddCollection
     {

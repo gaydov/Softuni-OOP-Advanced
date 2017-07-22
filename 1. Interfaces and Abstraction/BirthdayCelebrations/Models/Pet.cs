@@ -1,6 +1,4 @@
-﻿using System;
-
-public class Pet : ILiving
+﻿public class Pet : ILiving
 {
     public Pet(string name, string birthday)
     {

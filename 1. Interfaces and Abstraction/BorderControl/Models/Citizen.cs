@@ -1,6 +1,4 @@
-﻿using System;
-
-public class Citizen : IIndividual
+﻿public class Citizen : IIndividual
 {
     public Citizen(string name, int age, string id)
     {
