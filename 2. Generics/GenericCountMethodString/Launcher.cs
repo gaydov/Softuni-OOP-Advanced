@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
+using System.Security.Cryptography.X509Certificates;
 
 namespace GenericCountMethodString
 {
@@ -24,17 +26,7 @@ namespace GenericCountMethodString
         public static int GetCountOfElementsGreaterThanGivenElement<T>(IList<T> inputList, T givenElement)
             where T : IComparable<T>
         {
-            int count = 0;
-
-            foreach (T item in inputList)
-            {
-                if (item.CompareTo(givenElement) == 1)
-                {
-                    count++;
-                }
-            }
-
-            return count;
+            return inputList.Count(x => x.CompareTo(givenElement) == 1);
         }
     }
 }
