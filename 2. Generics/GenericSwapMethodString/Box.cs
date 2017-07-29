@@ -1,5 +1,4 @@
-﻿
-public class Box<T>
+﻿public class Box<T>
 {
     public Box(T value)
     {

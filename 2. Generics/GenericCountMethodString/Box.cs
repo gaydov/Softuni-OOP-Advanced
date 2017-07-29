@@ -1,5 +1,4 @@
-﻿
-using System;
+﻿using System;
 
 public class Box<T> : IComparable<Box<T>>
     where T : IComparable<T>
