@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace Attributes
+﻿namespace Attributes
 {
     [SoftUni("Georgi")]
     public class Program

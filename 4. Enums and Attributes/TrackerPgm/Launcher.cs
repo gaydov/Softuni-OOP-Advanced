@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace TrackerPgm
+﻿namespace TrackerPgm
 {
     [SoftUni("Georgi")]
     public class Launcher
