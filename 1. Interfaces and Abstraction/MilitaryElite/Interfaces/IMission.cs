@@ -1,9 +1,6 @@
-﻿namespace MilitaryElite.Interfaces
+﻿public interface IMission
 {
-    public interface IMission
-    {
-        string CodeName { get; }
-        string State { get; }
-        void CompleteMission();
-    }
+    string CodeName { get; }
+    string State { get; }
+    void CompleteMission();
 }

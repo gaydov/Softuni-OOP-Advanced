@@ -1,9 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace MilitaryElite.Interfaces
+public interface IEngineer : ISpecialisedSoldier
 {
-    public interface IEngineer : ISpecialisedSoldier
-    {
-        IList<IRepair> Repairs { get; }
-    }
+    IList<IRepair> Repairs { get; }
 }

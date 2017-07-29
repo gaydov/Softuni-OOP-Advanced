@@ -1,8 +1,5 @@
-﻿namespace ExplicitInterfaces.Interfaces
+﻿public interface IResident : INameable
 {
-    public interface IResident : INameable
-    {
-        string Country { get; }
-        string GetName();
-    }
+    string Country { get; }
+    string GetName();
 }

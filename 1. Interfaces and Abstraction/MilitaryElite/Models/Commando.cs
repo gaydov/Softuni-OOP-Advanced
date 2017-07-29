@@ -1,10 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Text;
-using MilitaryElite.Interfaces;
 
-namespace MilitaryElite.Models
-{
-    public class Commando : SpecialisedSoldier, ICommando
+public class Commando : SpecialisedSoldier, ICommando
     {
         public Commando(int id, string firstName, string lastName, decimal salary, string corps, IList<IMission> missions)
             : base(id, firstName, lastName, salary, corps)
@@ -28,4 +25,3 @@ namespace MilitaryElite.Models
             return sb.ToString().Trim();
         }
     }
-}

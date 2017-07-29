@@ -1,7 +1,4 @@
-﻿namespace CollectionHierarchy.Interfaces
+﻿public interface IAddRemoveCollection : IAddCollection
 {
-    public interface IAddRemoveCollection : IAddCollection
-    {
-        string Remove();
-    }
+    string Remove();
 }

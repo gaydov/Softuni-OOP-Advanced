@@ -1,4 +1,4 @@
-﻿interface IPerson : INameable, IAging, IBuyer
+﻿public interface IPerson : INameable, IAging, IBuyer
 {
 }
 

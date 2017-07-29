@@ -1,7 +1,4 @@
-﻿namespace CollectionHierarchy.Interfaces
+﻿public interface IAddCollection
 {
-    public interface IAddCollection
-    {
-        int Add(string item);
-    }
+    int Add(string item);
 }

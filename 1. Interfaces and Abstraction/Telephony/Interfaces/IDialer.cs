@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-interface IDialer
+public interface IDialer
 {
     ICollection<string> Numbers { get; }
 

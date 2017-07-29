@@ -1,21 +1,16 @@
-﻿using MilitaryElite.Interfaces;
-
-namespace MilitaryElite.Models
+﻿public class Repair : IRepair
 {
-    public class Repair : IRepair
+    public Repair(string partName, int hoursWorked)
     {
-        public Repair(string partName, int hoursWorked)
-        {
-            this.PartName = partName;
-            this.HoursWorked = hoursWorked;
-        }
+        this.PartName = partName;
+        this.HoursWorked = hoursWorked;
+    }
 
-        public string PartName { get; }
-        public int HoursWorked { get; }
+    public string PartName { get; }
+    public int HoursWorked { get; }
 
-        public override string ToString()
-        {
-            return $"  Part Name: {this.PartName} Hours Worked: {this.HoursWorked}";
-        }
+    public override string ToString()
+    {
+        return $"  Part Name: {this.PartName} Hours Worked: {this.HoursWorked}";
     }
 }

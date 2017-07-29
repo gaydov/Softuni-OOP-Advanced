@@ -1,7 +1,4 @@
-﻿namespace CollectionHierarchy.Interfaces
+﻿public interface IMyList : IAddRemoveCollection
 {
-    public interface IMyList : IAddRemoveCollection
-    {
-        int Used { get; }
-    }
+    int Used { get; }
 }

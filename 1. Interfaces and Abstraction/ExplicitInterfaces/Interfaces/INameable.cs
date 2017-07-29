@@ -1,7 +1,4 @@
-﻿namespace ExplicitInterfaces.Interfaces
+﻿public interface INameable
 {
-    public interface INameable
-    {
-        string Name { get; }
-    }
+    string Name { get; }
 }

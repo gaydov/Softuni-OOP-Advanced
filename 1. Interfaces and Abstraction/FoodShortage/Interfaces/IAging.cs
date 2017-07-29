@@ -1,4 +1,4 @@
-﻿interface IAging
+﻿public interface IAging
 {
     int Age { get; }
 }

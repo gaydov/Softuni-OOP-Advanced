@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-interface IBrowser
+public interface IBrowser
 {
     ICollection<string> URLs { get; }
 

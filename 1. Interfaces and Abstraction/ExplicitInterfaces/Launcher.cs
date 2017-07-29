@@ -1,5 +1,4 @@
 ﻿using System;
-using ExplicitInterfaces.Interfaces;
 
 namespace ExplicitInterfaces
 {

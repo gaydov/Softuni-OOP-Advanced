@@ -1,8 +1,5 @@
-﻿namespace MilitaryElite.Interfaces
+﻿public interface IRepair
 {
-    public interface IRepair
-    {
-        string PartName { get; }
-        int HoursWorked { get; }
-    }
+    string PartName { get; }
+    int HoursWorked { get; }
 }

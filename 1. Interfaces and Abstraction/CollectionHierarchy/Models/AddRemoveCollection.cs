@@ -1,29 +1,25 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
-using CollectionHierarchy.Interfaces;
 
-namespace CollectionHierarchy.Models
+public class AddRemoveCollection : IAddRemoveCollection
 {
-    public class AddRemoveCollection : IAddRemoveCollection
+    public AddRemoveCollection()
     {
-        public AddRemoveCollection()
-        {
-            this.Items = new List<string>();
-        }
+        this.Items = new List<string>();
+    }
 
-        private List<string> Items { get; }
+    private List<string> Items { get; }
 
-        public int Add(string item)
-        {
-            this.Items.Insert(0, item);
-            return 0;
-        }
+    public int Add(string item)
+    {
+        this.Items.Insert(0, item);
+        return 0;
+    }
 
-        public string Remove()
-        {
-            string toBeRemoved = this.Items.Last();
-            this.Items.Remove(toBeRemoved);
-            return toBeRemoved;
-        }
+    public string Remove()
+    {
+        string toBeRemoved = this.Items.Last();
+        this.Items.Remove(toBeRemoved);
+        return toBeRemoved;
     }
 }

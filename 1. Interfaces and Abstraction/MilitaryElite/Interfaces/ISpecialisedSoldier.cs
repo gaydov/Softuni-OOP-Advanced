@@ -1,7 +1,4 @@
-﻿namespace MilitaryElite.Interfaces
+﻿public interface ISpecialisedSoldier : IPrivate
 {
-    public interface ISpecialisedSoldier : IPrivate
-    {
-        string Corps { get; }
-    }
+    string Corps { get; }
 }

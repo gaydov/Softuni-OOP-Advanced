@@ -1,4 +1,4 @@
-﻿interface ICar
+﻿public interface ICar
 {
     string Model { get; }
 

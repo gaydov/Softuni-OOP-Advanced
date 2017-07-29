@@ -1,8 +1,5 @@
-﻿namespace ExplicitInterfaces.Interfaces
+﻿public interface IPerson : INameable
 {
-    public interface IPerson : INameable
-    {
-        int Age { get; }
-        string GetName();
-    }
+    int Age { get; }
+    string GetName();
 }
