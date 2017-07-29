@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace LibraryPgm
+﻿namespace LibraryPgm
 {
     public class Launcher
     {
