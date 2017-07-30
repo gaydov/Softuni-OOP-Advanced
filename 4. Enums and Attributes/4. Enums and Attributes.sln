@@ -27,6 +27,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeckOfCards", "DeckOfCards\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CardGame", "CardGame\CardGame.csproj", "{631BC23A-AED8-42DD-802C-FD40A06C3406}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrafficLights", "TrafficLights\TrafficLights.csproj", "{DB82CB51-5F55-49BB-B7CE-54A35F5CE181}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomClassAttribute", "CustomClassAttribute\CustomClassAttribute.csproj", "{3124A2F7-DDC2-49A7-BB78-DC0D562FDE77}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -81,6 +85,14 @@ Global
 		{631BC23A-AED8-42DD-802C-FD40A06C3406}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{631BC23A-AED8-42DD-802C-FD40A06C3406}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{631BC23A-AED8-42DD-802C-FD40A06C3406}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DB82CB51-5F55-49BB-B7CE-54A35F5CE181}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DB82CB51-5F55-49BB-B7CE-54A35F5CE181}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DB82CB51-5F55-49BB-B7CE-54A35F5CE181}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DB82CB51-5F55-49BB-B7CE-54A35F5CE181}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3124A2F7-DDC2-49A7-BB78-DC0D562FDE77}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3124A2F7-DDC2-49A7-BB78-DC0D562FDE77}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3124A2F7-DDC2-49A7-BB78-DC0D562FDE77}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3124A2F7-DDC2-49A7-BB78-DC0D562FDE77}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
