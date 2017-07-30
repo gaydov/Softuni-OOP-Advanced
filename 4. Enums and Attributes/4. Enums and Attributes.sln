@@ -23,6 +23,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CardCompareTo", "CardCompar
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomEnumAttribute", "CustomEnumAttribute\CustomEnumAttribute.csproj", "{A2C90F09-7B8A-478F-AC77-76CA69A86445}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeckOfCards", "DeckOfCards\DeckOfCards.csproj", "{9050DCE3-F1E1-4C28-B4A9-3386F2C4ECF8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CardGame", "CardGame\CardGame.csproj", "{631BC23A-AED8-42DD-802C-FD40A06C3406}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -69,6 +73,14 @@ Global
 		{A2C90F09-7B8A-478F-AC77-76CA69A86445}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A2C90F09-7B8A-478F-AC77-76CA69A86445}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A2C90F09-7B8A-478F-AC77-76CA69A86445}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9050DCE3-F1E1-4C28-B4A9-3386F2C4ECF8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9050DCE3-F1E1-4C28-B4A9-3386F2C4ECF8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9050DCE3-F1E1-4C28-B4A9-3386F2C4ECF8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9050DCE3-F1E1-4C28-B4A9-3386F2C4ECF8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{631BC23A-AED8-42DD-802C-FD40A06C3406}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{631BC23A-AED8-42DD-802C-FD40A06C3406}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{631BC23A-AED8-42DD-802C-FD40A06C3406}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{631BC23A-AED8-42DD-802C-FD40A06C3406}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

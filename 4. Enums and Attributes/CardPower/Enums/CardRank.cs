@@ -1,6 +1,5 @@
 ﻿public enum CardRank
 {
-    None = -1,
     Ace = 14,
     Two = 2,
     Three = 3,

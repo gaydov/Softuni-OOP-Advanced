@@ -2,68 +2,49 @@
 
 public class Card
 {
-    private CardRank rank;
-    private CardSuit suit;
+    private readonly CardRank rank;
+    private readonly CardSuit suit;
 
     public Card(string rank, string suit)
     {
-        this.Rank = this.IsRankValid(rank);
-        this.Suit = this.IsSuitValid(suit);
-    }
-
-    public CardRank Rank
-    {
-        get { return this.rank; }
-
-        private set
-        {
-            // In case invalid rank is entered the first item from the enum is returned - "None"
-            if (value == CardRank.None)
-            {
-                throw new ArgumentException("Invalid rank.");
-            }
-
-            this.rank = value;
-        }
-    }
-
-    public CardSuit Suit
-    {
-        get { return this.suit; }
-
-        private set
-        {
-            // In case invalid suit is entered the first item from the enum is returned - "None"
-            if (value == CardSuit.None)
-            {
-                throw new ArgumentException("Invalid suit.");
-            }
-
-            this.suit = value;
-        }
+        this.rank = this.GetRankIfValid(rank);
+        this.suit = this.GetSuitIfValid(suit);
     }
 
     public int Power
     {
-        get { return (int)this.Rank + (int)this.Suit; }
+        get { return (int)this.rank + (int)this.suit; }
     }
 
     public override string ToString()
     {
-        return $"Card name: {this.Rank} of {this.Suit}; Card power: {this.Power}";
+        return $"Card name: {this.rank} of {this.suit}; Card power: {this.Power}";
     }
 
-    private CardSuit IsSuitValid(string inputSuit)
+    private CardRank GetRankIfValid(string rankToBeChecked)
     {
-        CardSuit resultSuit;
-        Enum.TryParse(inputSuit, true, out resultSuit); // If the parse is not successfull the first item in the enum is reurned
-        return resultSuit;
+        try
+        {
+            CardRank result = (CardRank)Enum.Parse(typeof(CardRank), rankToBeChecked);
+            return result;
+        }
+        catch (ArgumentException)
+        {
+            throw new ArgumentException("No such card exists.");
+        }
     }
 
-    private CardRank IsRankValid(string inputRank)
+    private CardSuit GetSuitIfValid(string suitToBeChecked)
     {
-        CardRank resultRank;
-        Enum.TryParse(inputRank, true, out resultRank); // If the parse is not successfull the first item in the enum is reurned
-        return resultRank;
+        try
+        {
+            CardSuit result = (CardSuit)Enum.Parse(typeof(CardSuit), suitToBeChecked);
+            return result;
+        }
+        catch (ArgumentException)
+        {
+            throw new ArgumentException("No such card exists.");
+        }
     }
 }
+
