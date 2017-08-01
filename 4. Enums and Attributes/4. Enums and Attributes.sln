@@ -31,6 +31,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrafficLights", "TrafficLig
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomClassAttribute", "CustomClassAttribute\CustomClassAttribute.csproj", "{3124A2F7-DDC2-49A7-BB78-DC0D562FDE77}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InfernoInfinity", "InfernoInfinity\InfernoInfinity.csproj", "{F663A423-2DFA-4BD6-A5FE-9225E7CC4787}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -93,6 +95,10 @@ Global
 		{3124A2F7-DDC2-49A7-BB78-DC0D562FDE77}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3124A2F7-DDC2-49A7-BB78-DC0D562FDE77}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3124A2F7-DDC2-49A7-BB78-DC0D562FDE77}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F663A423-2DFA-4BD6-A5FE-9225E7CC4787}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F663A423-2DFA-4BD6-A5FE-9225E7CC4787}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F663A423-2DFA-4BD6-A5FE-9225E7CC4787}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F663A423-2DFA-4BD6-A5FE-9225E7CC4787}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
