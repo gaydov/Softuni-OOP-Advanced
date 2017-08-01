@@ -1,5 +1,4 @@
-﻿using System;
-using InfernoInfinity.Enums;
+﻿using InfernoInfinity.Enums;
 using InfernoInfinity.Interfaces;
 using InfernoInfinity.Core;
 

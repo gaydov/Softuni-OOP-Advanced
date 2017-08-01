@@ -1,8 +1,6 @@
 ﻿using System.Collections.Generic;
 using InfernoInfinity.Interfaces;
-using InfernoInfinity.Models;
 using InfernoInfinity.Factories;
-using InfernoInfinity.Core;
 
 namespace InfernoInfinity.CommandInterpreterItems
 {

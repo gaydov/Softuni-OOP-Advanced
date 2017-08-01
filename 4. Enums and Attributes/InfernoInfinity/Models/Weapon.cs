@@ -1,5 +1,4 @@
-﻿using System;
-using System.Linq;
+﻿using System.Linq;
 using InfernoInfinity.Enums;
 using InfernoInfinity.Interfaces;
 using InfernoInfinity.Core;

@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using InfernoInfinity.CommandInterpreterItems;
 using InfernoInfinity.Interfaces;
-using InfernoInfinity.Models;
 
 namespace InfernoInfinity.Core
 {
