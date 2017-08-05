@@ -1,0 +1,58 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26430.16
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Stealer", "Stealer\Stealer.csproj", "{E8868503-05EE-441B-9EF8-12DAE5CEF6BD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HighQualityMistakes", "HighQualityMistakes\HighQualityMistakes.csproj", "{3E762AD1-695A-4E03-9934-F91FFCA69D9C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MissionPrivateImpossible", "MissionPrivateImpossible\MissionPrivateImpossible.csproj", "{E07F22CE-9399-453A-9F5C-0A83F3B032B2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Collector", "Collector\Collector.csproj", "{9944C51A-FE62-40E1-A8F3-991171577A06}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HarvestingFieldsPgm", "HarvestingFieldsPgm\HarvestingFieldsPgm.csproj", "{BA30403B-1488-4037-A03E-EF28C743B530}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlackBoxInteger", "BlackBoxInteger\BlackBoxInteger.csproj", "{71EEE53C-7D12-4DDF-AA6E-BE6CF1E5FF18}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BarrackWarsTasks", "BarrackWarsTasks\BarrackWarsTasks.csproj", "{CE711D6D-D664-44F4-B2DA-A78690696E32}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E8868503-05EE-441B-9EF8-12DAE5CEF6BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E8868503-05EE-441B-9EF8-12DAE5CEF6BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E8868503-05EE-441B-9EF8-12DAE5CEF6BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E8868503-05EE-441B-9EF8-12DAE5CEF6BD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3E762AD1-695A-4E03-9934-F91FFCA69D9C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3E762AD1-695A-4E03-9934-F91FFCA69D9C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3E762AD1-695A-4E03-9934-F91FFCA69D9C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3E762AD1-695A-4E03-9934-F91FFCA69D9C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E07F22CE-9399-453A-9F5C-0A83F3B032B2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E07F22CE-9399-453A-9F5C-0A83F3B032B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E07F22CE-9399-453A-9F5C-0A83F3B032B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E07F22CE-9399-453A-9F5C-0A83F3B032B2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9944C51A-FE62-40E1-A8F3-991171577A06}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9944C51A-FE62-40E1-A8F3-991171577A06}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9944C51A-FE62-40E1-A8F3-991171577A06}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9944C51A-FE62-40E1-A8F3-991171577A06}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BA30403B-1488-4037-A03E-EF28C743B530}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BA30403B-1488-4037-A03E-EF28C743B530}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BA30403B-1488-4037-A03E-EF28C743B530}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BA30403B-1488-4037-A03E-EF28C743B530}.Release|Any CPU.Build.0 = Release|Any CPU
+		{71EEE53C-7D12-4DDF-AA6E-BE6CF1E5FF18}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{71EEE53C-7D12-4DDF-AA6E-BE6CF1E5FF18}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{71EEE53C-7D12-4DDF-AA6E-BE6CF1E5FF18}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{71EEE53C-7D12-4DDF-AA6E-BE6CF1E5FF18}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CE711D6D-D664-44F4-B2DA-A78690696E32}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CE711D6D-D664-44F4-B2DA-A78690696E32}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CE711D6D-D664-44F4-B2DA-A78690696E32}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CE711D6D-D664-44F4-B2DA-A78690696E32}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
