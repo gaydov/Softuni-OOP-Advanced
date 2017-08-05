@@ -8,10 +8,6 @@
         public Swordsman()
             : base(DefaultHealth, DefaultDamage)
         {
-
         }
     }
 }
-
-
-

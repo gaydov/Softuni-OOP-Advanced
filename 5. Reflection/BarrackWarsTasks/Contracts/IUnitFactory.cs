@@ -5,4 +5,3 @@
         IUnit CreateUnit(string unitType);
     }
 }
-

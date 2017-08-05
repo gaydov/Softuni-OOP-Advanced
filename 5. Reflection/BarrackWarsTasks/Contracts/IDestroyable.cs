@@ -5,4 +5,3 @@
         int Health { get; set; }
     }
 }
-

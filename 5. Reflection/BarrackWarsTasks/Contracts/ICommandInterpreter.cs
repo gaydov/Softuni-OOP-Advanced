@@ -5,4 +5,3 @@
         IExecutable InterpretCommand(string[] data, string commandName);
     }
 }
-

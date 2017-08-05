@@ -5,7 +5,7 @@ using BarrackWarsTasks.Contracts;
 
 namespace BarrackWarsTasks.Data
 {
-    class UnitRepository : IRepository
+    public class UnitRepository : IRepository
     {
         private readonly IDictionary<string, int> amountOfUnits;
 
@@ -55,4 +55,3 @@ namespace BarrackWarsTasks.Data
         }
     }
 }
-

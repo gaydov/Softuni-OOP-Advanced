@@ -7,7 +7,7 @@ using BarrackWarsTasks.Core.Commands;
 
 namespace BarrackWarsTasks.Core
 {
-    class Engine : IRunnable
+    public class Engine : IRunnable
     {
         private readonly IRepository repository;
         private readonly IUnitFactory unitFactory;
@@ -72,4 +72,3 @@ namespace BarrackWarsTasks.Core
         }
     }
 }
-
