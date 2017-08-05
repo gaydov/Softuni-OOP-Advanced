@@ -9,12 +9,11 @@
         set => this.password = value;
     }
 
-    private int Id { get; set; }
-
     public double BankAccountBalance { get; private set; }
+
+    private int Id { get; set; }
 
     public void DownloadAllBankAccountsInTheWorld()
     {
-
     }
 }

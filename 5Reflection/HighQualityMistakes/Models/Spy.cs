@@ -11,7 +11,7 @@ public class Spy
         FieldInfo[] classFields = classType.GetFields(BindingFlags.Instance | BindingFlags.Static |
                                                     BindingFlags.NonPublic | BindingFlags.Public);
 
-        Object instance = Activator.CreateInstance(classType, new object[] { });
+        object instance = Activator.CreateInstance(classType, new object[] { });
         StringBuilder result = new StringBuilder();
         result.AppendLine($"Class under investigation: {classType}");
 
