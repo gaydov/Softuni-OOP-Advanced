@@ -1,9 +1,9 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
-using InfernoInfinity.Interfaces;
-using InfernoInfinity.Factories;
 using InfernoInfinity.Core;
-using System;
+using InfernoInfinity.Factories;
+using InfernoInfinity.Interfaces;
 
 namespace InfernoInfinity.CommandInterpreterItems
 {

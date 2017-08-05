@@ -1,5 +1,5 @@
-﻿using InfernoInfinity.Enums;
-using System;
+﻿using System;
+using InfernoInfinity.Enums;
 
 namespace InfernoInfinity.Core
 {

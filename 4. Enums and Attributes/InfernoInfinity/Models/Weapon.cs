@@ -1,7 +1,7 @@
 ﻿using System.Linq;
+using InfernoInfinity.Core;
 using InfernoInfinity.Enums;
 using InfernoInfinity.Interfaces;
-using InfernoInfinity.Core;
 
 namespace InfernoInfinity.Models
 {
@@ -20,13 +20,21 @@ namespace InfernoInfinity.Models
         }
 
         public string Name { get; protected set; }
+
         public int MinDamage { get; protected set; }
+
         public int MaxDamage { get; protected set; }
+
         public int SocketsCount { get; protected set; }
+
         public int Strength { get; protected set; }
+
         public int Agility { get; protected set; }
+
         public int Vitality { get; protected set; }
+
         public IGem[] Gems { get; protected set; }
+
         public WeaponRarity Rarity { get; protected set; }
 
         public void AddGemToSocket(int socketIndex, IGem gemType)
@@ -37,10 +45,10 @@ namespace InfernoInfinity.Models
             }
 
             // The task's requirement is not to log any messages in that case and this part is commented because it affects the tests
-            //else
-            //{
-            //    throw new ArgumentException("Invalid socket entered");
-            //}
+            // else
+            // {
+            //     throw new ArgumentException("Invalid socket entered");
+            // }
         }
 
         public void RemoveGemFromSocket(int socketIndex)
@@ -51,10 +59,10 @@ namespace InfernoInfinity.Models
             }
 
             // The task's requirement is not to log any messages in that case and this part is commented because it affects the tests
-            //else
-            //{
-            //    throw new ArgumentException("Invalid socket entered");
-            //}
+            // else
+            // {
+            //     throw new ArgumentException("Invalid socket entered");
+            // }
         }
 
         public void CalculateStats()

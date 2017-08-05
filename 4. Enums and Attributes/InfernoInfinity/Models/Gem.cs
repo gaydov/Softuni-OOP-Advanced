@@ -1,6 +1,6 @@
-﻿using InfernoInfinity.Enums;
+﻿using InfernoInfinity.Core;
+using InfernoInfinity.Enums;
 using InfernoInfinity.Interfaces;
-using InfernoInfinity.Core;
 
 namespace InfernoInfinity.Models
 {
@@ -15,8 +15,11 @@ namespace InfernoInfinity.Models
         }
 
         public int StrengthIncrease { get; protected set; }
+
         public int AgilityIncrease { get; protected set; }
+
         public int VitalityIncrease { get; protected set; }
+
         public GemClarity Clarity { get; }
     }
 }

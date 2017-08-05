@@ -4,7 +4,7 @@ namespace InfernoInfinity.Core
 {
     public static class OutputHandler
     {
-        public static void WriteMessageInConsole (string message)
+        public static void WriteMessageInConsole(string message)
         {
             Console.WriteLine(message);
         }

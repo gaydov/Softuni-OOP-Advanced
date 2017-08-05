@@ -1,6 +1,6 @@
-﻿using InfernoInfinity.Interfaces;
+﻿using System;
+using InfernoInfinity.Interfaces;
 using InfernoInfinity.Models;
-using System;
 
 namespace InfernoInfinity.Factories
 {

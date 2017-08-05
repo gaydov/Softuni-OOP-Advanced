@@ -1,5 +1,5 @@
-﻿using InfernoInfinity.Core;
-using System;
+﻿using System;
+using InfernoInfinity.Core;
 
 namespace InfernoInfinity
 {
