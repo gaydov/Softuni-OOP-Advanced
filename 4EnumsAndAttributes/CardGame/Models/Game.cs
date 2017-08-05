@@ -10,7 +10,7 @@ namespace CardGame.Models
 
         public void StartGame()
         {
-            IList<Card> deck = GenerateDeck();
+            IList<Card> deck = this.GenerateDeck();
             string firstPlayerName = Console.ReadLine();
             string secondPlayerName = Console.ReadLine();
 

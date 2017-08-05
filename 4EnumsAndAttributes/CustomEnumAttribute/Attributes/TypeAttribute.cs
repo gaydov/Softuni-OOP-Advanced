@@ -19,4 +19,3 @@ public class TypeAttribute : Attribute
         return $"Type = {this.type}, Description = {this.description}";
     }
 }
-

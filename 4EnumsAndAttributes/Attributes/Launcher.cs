@@ -6,7 +6,6 @@
         [SoftUni("Aleks")]
         public static void Main()
         {
-
         }
     }
 }

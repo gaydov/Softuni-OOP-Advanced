@@ -26,6 +26,7 @@ namespace TrafficLights
                     trafficLight.SwitchLight();
                     result.Append($"{trafficLight} ");
                 }
+
                 result.AppendLine();
             }
 

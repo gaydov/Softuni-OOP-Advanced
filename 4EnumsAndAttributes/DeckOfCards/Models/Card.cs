@@ -23,7 +23,7 @@ public class Card : IComparable<Card>
 
     public override string ToString()
     {
-        return $"Card name: {this.rank} of {this.suit}; Card power: {this.Power}";
+        return $"{this.rank} of {this.suit}";
     }
 
     private CardRank GetRankIfValid(string rankToBeChecked)
@@ -52,4 +52,3 @@ public class Card : IComparable<Card>
         }
     }
 }
-

@@ -1,6 +1,6 @@
 ﻿using System;
 
-public class Card
+public class Card : IComparable<Card>
 {
     private readonly CardRank rank;
     private readonly CardSuit suit;
@@ -14,6 +14,11 @@ public class Card
     public int Power
     {
         get { return (int)this.rank + (int)this.suit; }
+    }
+
+    public int CompareTo(Card other)
+    {
+        return this.Power.CompareTo(other.Power);
     }
 
     public override string ToString()
@@ -47,4 +52,3 @@ public class Card
         }
     }
 }
-

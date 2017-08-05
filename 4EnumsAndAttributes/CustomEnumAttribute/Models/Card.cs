@@ -1,6 +1,6 @@
 ﻿using System;
 
-public class Card : IComparable<Card>, IEquatable<Card>
+public class Card : IComparable<Card>
 {
     private readonly CardRank rank;
     private readonly CardSuit suit;
@@ -21,14 +21,9 @@ public class Card : IComparable<Card>, IEquatable<Card>
         return this.Power.CompareTo(other.Power);
     }
 
-    public bool Equals(Card other)
-    {
-        return this.Power == other.Power;
-    }
-
     public override string ToString()
     {
-        return $"{this.rank} of {this.suit}";
+        return $"Card name: {this.rank} of {this.rank}; Card power: {this.Power}";
     }
 
     private CardRank GetRankIfValid(string rankToBeChecked)
@@ -57,4 +52,3 @@ public class Card : IComparable<Card>, IEquatable<Card>
         }
     }
 }
-
