@@ -16,4 +16,3 @@
 
     public string Birthdate { get; private set; }
 }
-

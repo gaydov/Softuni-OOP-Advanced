@@ -10,6 +10,7 @@
     public string Name { get; }
 
     public string Country { get; }
+
     public int Age { get; }
 
     string IResident.GetName()

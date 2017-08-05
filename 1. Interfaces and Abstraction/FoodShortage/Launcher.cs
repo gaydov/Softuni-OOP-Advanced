@@ -29,7 +29,7 @@ namespace FoodShortage
 
             while (!name.Equals("End"))
             {
-               if(buyers.Any(b => b.Name.Equals(name)))
+                if (buyers.Any(b => b.Name.Equals(name)))
                 {
                     IPerson currentBuyer = buyers.FirstOrDefault(b => b.Name.Equals(name));
                     currentBuyer.BuyFood();

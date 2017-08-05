@@ -9,9 +9,9 @@ namespace Telephony
         public static void Main()
         {
             List<string> numbers = Console.ReadLine().Split().ToList();
-            List<string> URLs = Console.ReadLine().Split().ToList();
+            List<string> urls = Console.ReadLine().Split().ToList();
 
-            Smartphone phone = new Smartphone(numbers, URLs);
+            Smartphone phone = new Smartphone(numbers, urls);
 
             Console.WriteLine(phone);
         }

@@ -7,6 +7,7 @@
     }
 
     public string CodeName { get; }
+
     public string State { get; private set; }
 
     public void CompleteMission()

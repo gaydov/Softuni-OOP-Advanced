@@ -19,4 +19,3 @@ public class Tesla : Car, IElectricCar
         return sb.ToString().Trim();
     }
 }
-

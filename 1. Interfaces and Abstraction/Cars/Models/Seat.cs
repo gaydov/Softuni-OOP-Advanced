@@ -16,4 +16,3 @@ public class Seat : Car
         return sb.ToString().Trim();
     }
 }
-

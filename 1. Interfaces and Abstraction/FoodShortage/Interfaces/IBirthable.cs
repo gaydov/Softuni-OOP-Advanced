@@ -2,4 +2,3 @@
 {
     string Birthday { get; }
 }
-

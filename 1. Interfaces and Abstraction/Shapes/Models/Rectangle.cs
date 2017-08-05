@@ -13,8 +13,8 @@ public class Rectangle : IDrawable
 
     public int Height
     {
-        get { return height; }
-        private set { height = value; }
+        get { return this.height; }
+        private set { this.height = value; }
     }
 
     public int Width
@@ -24,7 +24,6 @@ public class Rectangle : IDrawable
     }
 
     // Drawing algorithm given in the description of the task:
-
     public void Draw()
     {
         this.DrawLine(this.Width, '*', '*');
@@ -38,7 +37,6 @@ public class Rectangle : IDrawable
     }
 
     // Drawing algorithm given in the description of the task:
-
     private void DrawLine(int width, char end, char mid)
     {
         Console.Write(end);
@@ -51,4 +49,3 @@ public class Rectangle : IDrawable
         Console.WriteLine(end);
     }
 }
-

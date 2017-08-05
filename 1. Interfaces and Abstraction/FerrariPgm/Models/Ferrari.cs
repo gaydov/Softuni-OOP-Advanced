@@ -1,11 +1,11 @@
 ﻿public class Ferrari : ICar
 {
-    private const string model = "488-Spider";
+    private const string DefaultModel = "488-Spider";
 
     public Ferrari(string driverName)
     {
         this.Driver = driverName;
-        this.Model = model;
+        this.Model = DefaultModel;
     }
 
     public string Driver { get; private set; }
@@ -27,4 +27,3 @@
         return $"{this.Model}/{this.PushBrakes()}/{this.PushGas()}/{this.Driver}";
     }
 }
-

@@ -31,4 +31,3 @@ public abstract class Car : ICar
         return sb.ToString().Trim();
     }
 }
-

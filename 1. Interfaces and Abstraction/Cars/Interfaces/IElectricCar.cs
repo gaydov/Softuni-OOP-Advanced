@@ -2,4 +2,3 @@
 {
     int Battery { get; }
 }
-

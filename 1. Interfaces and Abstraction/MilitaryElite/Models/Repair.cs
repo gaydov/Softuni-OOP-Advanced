@@ -7,6 +7,7 @@
     }
 
     public string PartName { get; }
+
     public int HoursWorked { get; }
 
     public override string ToString()

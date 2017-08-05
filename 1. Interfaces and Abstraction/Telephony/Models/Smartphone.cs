@@ -4,10 +4,10 @@ using System.Text;
 
 public class Smartphone : IDialer, IBrowser
 {
-    public Smartphone(ICollection<string> numbers, ICollection<string> URLs)
+    public Smartphone(ICollection<string> numbers, ICollection<string> urls)
     {
         this.Numbers = numbers;
-        this.URLs = URLs;
+        this.URLs = urls;
     }
 
     public ICollection<string> Numbers { get; private set; }
@@ -55,4 +55,3 @@ public class Smartphone : IDialer, IBrowser
         return sb.ToString().Trim();
     }
 }
-

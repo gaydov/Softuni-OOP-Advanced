@@ -6,4 +6,3 @@ public interface IDialer
 
     string Call(string number);
 }
-

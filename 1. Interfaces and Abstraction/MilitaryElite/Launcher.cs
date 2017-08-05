@@ -119,9 +119,9 @@ namespace MilitaryElite
         {
             IList<ISoldier> privates = new List<ISoldier>();
 
-            foreach (string ID in privatesIDs)
+            foreach (string id in privatesIDs)
             {
-                privates.Add(army.FirstOrDefault(s => s.Id.Equals(int.Parse(ID))));
+                privates.Add(army.FirstOrDefault(s => s.Id.Equals(int.Parse(id))));
             }
 
             return privates;

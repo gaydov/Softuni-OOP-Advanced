@@ -4,5 +4,3 @@
 
     int Age { get; }
 }
-
-

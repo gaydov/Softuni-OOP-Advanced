@@ -16,4 +16,3 @@
 
     public string Birthday { get; private set; }
 }
-

@@ -18,7 +18,6 @@ public class Circle : IDrawable
     public void Draw()
     {
         // Drawing algorithm given in the description of the task:
-
         double r_in = this.Radius - 0.4;
         double r_out = this.Radius + 0.4;
 
@@ -26,7 +25,7 @@ public class Circle : IDrawable
         {
             for (double x = -this.Radius; x < r_out; x += 0.5)
             {
-                double value = x * x + y * y;
+                double value = (x * x) + (y * y);
                 if (value >= r_in * r_in && value <= r_out * r_out)
                 {
                     Console.Write("*");
@@ -36,8 +35,8 @@ public class Circle : IDrawable
                     Console.Write(" ");
                 }
             }
+
             Console.WriteLine();
         }
     }
 }
-
