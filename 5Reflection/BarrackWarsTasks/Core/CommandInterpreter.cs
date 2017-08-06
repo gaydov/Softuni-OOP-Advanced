@@ -10,23 +10,17 @@ namespace BarrackWarsTasks.Core
     public class CommandInterpreter : ICommandInterpreter
     {
         private const string CommandClassSuffix = "Command";
-        private const string FolderWithCommands = "Commands";
 
         public IExecutable InterpretCommand(string[] data, string commandName)
         {
-            // Getting the namespace where the commands reside
-            string commandsNamespace = Assembly
+            string fullCommandName = CultureInfo.CurrentCulture.TextInfo.ToTitleCase(commandName) + CommandClassSuffix;
+
+            Type commandNameType = Assembly
                 .GetExecutingAssembly()
                 .GetTypes()
-                .Select(t => t.Namespace)
-                .Distinct()
-                .Where(n => n != null)
-                .FirstOrDefault(n => n.Contains(FolderWithCommands));
+                .FirstOrDefault(t => t.Name == fullCommandName);
 
-            string actualCommandName = CultureInfo.CurrentCulture.TextInfo.ToTitleCase(commandName) + CommandClassSuffix;
-            Type classType = Type.GetType($"{commandsNamespace}.{actualCommandName}");
-            IExecutable command = (Command)Activator.CreateInstance(classType, new object[] { data });
-
+            IExecutable command = (Command)Activator.CreateInstance(commandNameType, new object[] { data });
             return command;
         }
     }
