@@ -41,12 +41,12 @@ namespace BarrackWarsTasks.Core
         private void InjectDependencies(IExecutable command)
         {
             BindingFlags flags = BindingFlags.Instance | BindingFlags.NonPublic;
-            FieldInfo[] commandFields = command.GetType().GetFields(flags);
+            FieldInfo[] commandFields = command.GetType().GetFields(flags).Where(f => f.GetCustomAttribute(typeof(InjectAttribute)) != null).ToArray();
             FieldInfo[] engineFields = this.GetType().GetFields(flags);
 
-            foreach (FieldInfo fieldOfCommand in commandFields.Where(f => f.GetCustomAttribute(typeof(InjectAttribute)) != null))
+            foreach (FieldInfo fieldOfCommand in commandFields)
             {
-                if (engineFields.Any(f => f.FieldType == fieldOfCommand.FieldType))
+                if (engineFields.Any(engineField => engineField.FieldType == fieldOfCommand.FieldType))
                 {
                     fieldOfCommand.SetValue(command, engineFields.First(f => f.FieldType == fieldOfCommand.FieldType).GetValue(this));
                 }
