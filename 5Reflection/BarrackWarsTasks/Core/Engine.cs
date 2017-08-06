@@ -26,29 +26,13 @@ namespace BarrackWarsTasks.Core
                 {
                     string input = Console.ReadLine();
                     string[] data = input.Split();
-                    CommandInterpreter cmdInterpreter = new CommandInterpreter();
+                    CommandInterpreter cmdInterpreter = new CommandInterpreter(this.repository, this.unitFactory);
                     IExecutable currentCommand = cmdInterpreter.InterpretCommand(data, data[0]);
-                    this.InjectDependencies(currentCommand);
                     Console.WriteLine(currentCommand.Execute());
                 }
                 catch (Exception e)
                 {
                     Console.WriteLine(e.Message);
-                }
-            }
-        }
-
-        private void InjectDependencies(IExecutable command)
-        {
-            BindingFlags flags = BindingFlags.Instance | BindingFlags.NonPublic;
-            FieldInfo[] commandFields = command.GetType().GetFields(flags).Where(f => f.GetCustomAttribute(typeof(InjectAttribute)) != null).ToArray();
-            FieldInfo[] engineFields = this.GetType().GetFields(flags);
-
-            foreach (FieldInfo fieldOfCommand in commandFields)
-            {
-                if (engineFields.Any(engineField => engineField.FieldType == fieldOfCommand.FieldType))
-                {
-                    fieldOfCommand.SetValue(command, engineFields.First(f => f.FieldType == fieldOfCommand.FieldType).GetValue(this));
                 }
             }
         }
