@@ -59,6 +59,7 @@
     <Compile Include="Core\Commands\RetireCommand.cs" />
     <Compile Include="Core\Engine.cs" />
     <Compile Include="Core\Factories\UnitFactory.cs" />
+    <Compile Include="Core\CommandInterpreter.cs" />
     <Compile Include="Data\UnitRepository.cs" />
     <Compile Include="Models\Units\Archer.cs" />
     <Compile Include="Models\Units\Gunner.cs" />

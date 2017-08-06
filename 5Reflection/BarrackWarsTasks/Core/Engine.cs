@@ -26,7 +26,8 @@ namespace BarrackWarsTasks.Core
                 {
                     string input = Console.ReadLine();
                     string[] data = input.Split();
-                    IExecutable currentCommand = this.InterpredCommand(data);
+                    CommandInterpreter cmdInterpreter = new CommandInterpreter();
+                    IExecutable currentCommand = cmdInterpreter.InterpretCommand(data, data[0]);
                     this.InjectDependencies(currentCommand);
                     Console.WriteLine(currentCommand.Execute());
                 }
@@ -35,25 +36,6 @@ namespace BarrackWarsTasks.Core
                     Console.WriteLine(e.Message);
                 }
             }
-        }
-
-        private IExecutable InterpredCommand(string[] data)
-        {
-            // Getting the namespace where the commands reside
-            string commandsNamespace = Assembly
-                .GetExecutingAssembly()
-                .GetTypes()
-                .Select(t => t.Namespace)
-                .Distinct()
-                .Where(n => n != null)
-                .FirstOrDefault(n => n.Contains("Commands"));
-
-            string inputCommandName = data[0];
-            string commandName = char.ToUpper(inputCommandName[0]) + inputCommandName.Substring(1) + "Command";
-            Type classType = Type.GetType($"{commandsNamespace}.{commandName}");
-            IExecutable command = (Command)Activator.CreateInstance(classType, new object[] { data });
-
-            return command;
         }
 
         private void InjectDependencies(IExecutable command)
