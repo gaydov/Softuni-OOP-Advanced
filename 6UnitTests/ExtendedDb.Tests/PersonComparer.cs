@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using ExtendedDatabase.Models;
 
 namespace ExtendedDb.Tests
@@ -11,9 +10,9 @@ namespace ExtendedDb.Tests
             return x.Username.Equals(y.Username) && x.Id == y.Id;
         }
 
-        public int GetHashCode(Person obj)
+        public int GetHashCode(Person personObj)
         {
-            return Tuple.Create(obj.Username, obj.Id).GetHashCode();
+            return personObj.Username.GetHashCode() + personObj.Id.GetHashCode();
         }
     }
 }
