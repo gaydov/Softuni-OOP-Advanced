@@ -30,6 +30,12 @@ namespace DatabasePgm
             }
         }
 
+        // Indexer for the database
+        public int this[int i]
+        {
+            get { return this.items[i]; }
+        }
+
         public void Add(int element)
         {
             if (this.currentIndex == ArrayCapacity)
@@ -55,12 +61,6 @@ namespace DatabasePgm
         public int[] Fetch()
         {
             return this.items.Take(this.currentIndex).ToArray();
-        }
-
-        // Indexer for the database
-        public int this[int i]
-        {
-            get { return this.items[i]; }
         }
     }
 }

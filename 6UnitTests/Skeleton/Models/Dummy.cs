@@ -3,8 +3,8 @@ using Skeleton.Interfaces;
 
 public class Dummy : ITarget
 {
+    private readonly int experience;
     private int health;
-    private int experience;
 
     public Dummy(int health, int experience)
     {

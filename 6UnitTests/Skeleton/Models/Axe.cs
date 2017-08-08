@@ -3,7 +3,7 @@ using Skeleton.Interfaces;
 
 public class Axe : IWeapon
 {
-    private int attackPoints;
+    private readonly int attackPoints;
     private int durabilityPoints;
 
     public Axe(int attack, int durability)

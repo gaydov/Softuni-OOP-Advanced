@@ -2,9 +2,9 @@
 
 public class Hero
 {
-    private string name;
+    private readonly string name;
+    private readonly IWeapon weapon;
     private int experience;
-    private IWeapon weapon;
 
     public Hero(string name, IWeapon weapon)
     {

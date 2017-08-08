@@ -1,10 +1,7 @@
-﻿using NUnit.Framework;
-using System;
-using System.Collections.Generic;
+﻿using System;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using DatabasePgm;
+using NUnit.Framework;
 
 namespace Database.Tests
 {
@@ -44,13 +41,47 @@ namespace Database.Tests
         }
 
         [Test]
-        public void AddElementShouldThrowExceptionIfTheCollectionIsFullAlready()
+        public void AddElementShouldThrowExceptionIfTheDatabaseIsFullAlready()
         {
             // Arrange
             Db db = new Db(Enumerable.Repeat(5, Capacity).ToArray());
 
             // Assert
-            Assert.Throws<InvalidOperationException>(() => db.Add(10), "More elements can be added even when the collection is full.");
+            Assert.Throws<InvalidOperationException>(() => db.Add(10), "More elements can be added even when the database is full.");
+        }
+
+        [Test]
+        public void RemoveShouldRemoveTheLastElementFromTheDatabaseIfThereIsAny()
+        {
+            // Arrange
+            Db db = new Db(Enumerable.Repeat(5, 2).ToArray());
+
+            // Act
+            db.Remove();
+
+            // Assert
+            Assert.AreEqual(0, db[1], "The last element is not removed from the database.");
+        }
+
+        [Test]
+        public void RemoveShouldThrowExceptionIfTheDatabaseIsEmpty()
+        {
+            // Arrange
+            Db db = new Db();
+
+            // Assert
+            Assert.Throws<InvalidOperationException>(() => db.Remove(), "No exception is thrown.");
+        }
+
+        [Test]
+        public void FetchShouldReturnTheElementsOfTheDatabase()
+        {
+            // Arrange
+            Db db = new Db(Enumerable.Repeat(5, 3).ToArray());
+            int[] sampleCollection = new[] { 5, 5, 5 };
+
+            // Assert
+            CollectionAssert.AreEqual(sampleCollection, db.Fetch(), "The method does not return the elements of the database.");
         }
     }
 }
