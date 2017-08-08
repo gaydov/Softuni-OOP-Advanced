@@ -1,7 +1,5 @@
 ﻿using System;
-using Moq;
 using NUnit.Framework;
-using Skeleton.Interfaces;
 
 namespace Skeleton.Tests
 {

@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace ExtendedDatabase.Models
+﻿namespace ExtendedDatabase.Models
 {
     public class Person
     {

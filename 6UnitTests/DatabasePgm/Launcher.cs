@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace DatabasePgm
+﻿namespace DatabasePgm
 {
     public class Launcher
     {
