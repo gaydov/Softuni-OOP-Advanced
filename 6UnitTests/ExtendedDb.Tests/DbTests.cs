@@ -42,11 +42,14 @@ namespace ExtendedDb.Tests
         [Test]
         public void AddShouldAddThePersonToTheDb()
         {
+            // Arrange
+            Person personToBeAdded = new Person("Rocky", 5454);
+
             // Act
-            this.db.Add(new Person("Rocky", 5454));
+            this.db.Add(personToBeAdded);
 
             // Assert
-            Assert.IsTrue(this.personComparer.Equals(new Person("Rocky", 5454), this.db[2]), "Person is not added to the DB.");
+            Assert.IsTrue(this.personComparer.Equals(personToBeAdded, this.db[2]), "Person is not added to the DB.");
         }
 
         [Test]
