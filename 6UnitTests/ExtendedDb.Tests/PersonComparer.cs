@@ -5,14 +5,14 @@ namespace ExtendedDb.Tests
 {
     public class PersonComparer : IEqualityComparer<Person>
     {
-        public bool Equals(Person x, Person y)
+        public bool Equals(Person firstPerson, Person secondPerson)
         {
-            return x.Username.Equals(y.Username) && x.Id == y.Id;
+            return firstPerson.Username.Equals(secondPerson.Username) && firstPerson.Id == secondPerson.Id;
         }
 
-        public int GetHashCode(Person personObj)
+        public int GetHashCode(Person person)
         {
-            return personObj.Username.GetHashCode() + personObj.Id.GetHashCode();
+            return new { person.Username, person.Id }.GetHashCode();
         }
     }
 }
