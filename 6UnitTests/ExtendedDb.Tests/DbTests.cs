@@ -7,7 +7,7 @@ namespace ExtendedDb.Tests
     [TestFixture]
     public class DbTests
     {
-        private static readonly Person ExpectedPerson = new Person("Arnold", 3434);
+        private readonly Person expectedPerson = new Person("Arnold", 3434);
         private readonly PersonComparer personComparer = new PersonComparer();
         private Db db;
 
@@ -22,7 +22,7 @@ namespace ExtendedDb.Tests
         public void ConstructorShouldAddPeopleToTheDb()
         {
             // Assert
-            Assert.IsTrue(this.personComparer.Equals(ExpectedPerson, this.db[1]), "The Db is not created correctly.");
+            Assert.IsTrue(this.personComparer.Equals(this.expectedPerson, this.db[1]), "The Db is not created correctly.");
         }
 
         [Test]
@@ -94,7 +94,7 @@ namespace ExtendedDb.Tests
             Person person = this.db.FindByUsername("Arnold");
 
             // Assert
-            Assert.IsTrue(this.personComparer.Equals(ExpectedPerson, person), "The person is not correctly returned.");
+            Assert.IsTrue(this.personComparer.Equals(this.expectedPerson, person), "The person is not correctly returned.");
         }
 
         [Test]
@@ -115,7 +115,7 @@ namespace ExtendedDb.Tests
         public void FindByIdReturnsThePersonWithThisId()
         {
             // Assert
-            Assert.IsTrue(this.personComparer.Equals(ExpectedPerson, this.db.FindById(3434)), "The person is not returned correctly.");
+            Assert.IsTrue(this.personComparer.Equals(this.expectedPerson, this.db.FindById(3434)), "The person is not returned correctly.");
         }
     }
 }

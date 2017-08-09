@@ -1,4 +1,6 @@
-﻿using ExtendedDatabase.Models;
+﻿using System.Collections;
+using System.Collections.Generic;
+using ExtendedDatabase.Models;
 using NUnit.Framework;
 
 namespace ExtendedDb.Tests
@@ -6,7 +8,7 @@ namespace ExtendedDb.Tests
     [TestFixture]
     public class PersonTests
     {
-        private readonly PersonComparer personComparer = new PersonComparer();
+        private readonly IEqualityComparer<Person> personComparer = new PersonComparer();
 
         [Test]
         public void ConstructorCreatesPersonWithTheProvidedUsernameAndId()
