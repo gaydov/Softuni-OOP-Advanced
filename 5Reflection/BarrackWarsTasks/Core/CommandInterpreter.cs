@@ -23,7 +23,7 @@ namespace BarrackWarsTasks.Core
 
         public IExecutable InterpretCommand(string[] data, string commandName)
         {
-            string fullCommandName = CultureInfo.CurrentCulture.TextInfo.ToTitleCase(commandName) + CommandClassSuffix;
+            string fullCommandName = char.ToUpper(commandName[0]) + commandName.Substring(1) + "Command";
 
             Type commandNameType = Assembly
                 .GetExecutingAssembly()
