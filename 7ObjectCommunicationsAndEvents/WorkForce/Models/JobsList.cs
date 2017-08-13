@@ -6,7 +6,7 @@ namespace WorkForce.Models
     {
         public void OnJobDone(object source, JobEventArgs args)
         {
-            // args.Job.JobDone -= this.OnJobDone;
+            args.Job.JobDone -= this.OnJobDone;
             this.Remove(args.Job);
         }
     }
