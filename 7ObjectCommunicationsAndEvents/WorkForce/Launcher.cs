@@ -37,12 +37,6 @@ namespace WorkForce
 
                     case "Pass":
 
-                        //// Not itterating properly with this approach - 80/100
-                        //// for (int i = jobs.Count - 1; i >= 0; i--)
-                        //// {
-                        ////     jobs[i].Update();
-                        //// }
-
                         foreach (Job job in jobs.ToArray())
                         {
                             job.Update();

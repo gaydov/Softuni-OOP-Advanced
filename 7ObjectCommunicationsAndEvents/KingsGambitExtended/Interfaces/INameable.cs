@@ -1,4 +1,4 @@
-﻿namespace KingsGambit.Interfaces
+﻿namespace KingsGambitExtended.Interfaces
 {
     public interface INameable
     {

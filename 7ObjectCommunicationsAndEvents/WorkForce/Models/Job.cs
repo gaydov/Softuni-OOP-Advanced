@@ -6,11 +6,12 @@ namespace WorkForce.Models
     public class Job
     {
         private readonly IEmployee employee;
+        private int hoursRequired;
 
         public Job(string name, int hoursRequired, IEmployee employee)
         {
             this.Name = name;
-            this.HoursRequired = hoursRequired;
+            this.hoursRequired = hoursRequired;
             this.employee = employee;
         }
 
@@ -18,13 +19,11 @@ namespace WorkForce.Models
 
         public string Name { get; }
 
-        public int HoursRequired { get; private set; }
-
         public void Update()
         {
-            this.HoursRequired -= this.employee.WorkHoursPerWeek;
+            this.hoursRequired -= this.employee.WorkHoursPerWeek;
 
-            if (this.HoursRequired <= 0)
+            if (this.hoursRequired <= 0)
             {
                 this.OnJobDone();
             }
@@ -32,7 +31,7 @@ namespace WorkForce.Models
 
         public override string ToString()
         {
-            return $"Job: {this.Name} Hours Remaining: {this.HoursRequired}";
+            return $"Job: {this.Name} Hours Remaining: {this.hoursRequired}";
         }
 
         protected virtual void OnJobDone()

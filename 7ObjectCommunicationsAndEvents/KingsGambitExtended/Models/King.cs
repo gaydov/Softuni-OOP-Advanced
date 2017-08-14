@@ -1,7 +1,7 @@
 ﻿using System;
-using KingsGambit.Interfaces;
+using KingsGambitExtended.Interfaces;
 
-namespace KingsGambit.Models
+namespace KingsGambitExtended.Models
 {
     public class King : INameable
     {
@@ -12,7 +12,7 @@ namespace KingsGambit.Models
 
         public event EventHandler BeingAttacked;
 
-        public string Name { get; set; }
+        public string Name { get; }
 
         public void TakeAttack()
         {

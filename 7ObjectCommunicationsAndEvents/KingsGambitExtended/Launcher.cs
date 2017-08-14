@@ -1,21 +1,20 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
-using KingsGambit.Models;
+using KingsGambitExtended.Models;
 
-namespace KingsGambit
+namespace KingsGambitExtended
 {
     public class Launcher
     {
         public static void Main()
         {
-            IList<Soldier> soldiers = new List<Soldier>();
+            SoldiersList soldiers = new SoldiersList();
             King king = new King(Console.ReadLine());
             string[] royalGuardsNames = Console.ReadLine().Split();
 
             foreach (string guardName in royalGuardsNames)
             {
-                RoyalGuard currentRoyalGuard = new RoyalGuard(guardName);
+                RoyalGuard currentRoyalGuard = new RoyalGuard(guardName, king);
                 soldiers.Add(currentRoyalGuard);
                 king.BeingAttacked += currentRoyalGuard.OnKingBeingAttacked;
             }
@@ -24,10 +23,12 @@ namespace KingsGambit
 
             foreach (string footManName in footmenNames)
             {
-                Footman footMan = new Footman(footManName);
+                Footman footMan = new Footman(footManName, king);
                 soldiers.Add(footMan);
                 king.BeingAttacked += footMan.OnKingBeingAttacked;
             }
+
+            soldiers.ForEach(s => s.SoldierKilled += soldiers.OnSoldierKilled);
 
             string[] command = Console.ReadLine().Split();
 
@@ -37,9 +38,8 @@ namespace KingsGambit
                 {
                     case "Kill":
 
-                        Soldier deadSoldier = soldiers.FirstOrDefault(s => s.Name.Equals(command[1]));
-                        king.BeingAttacked -= deadSoldier.OnKingBeingAttacked;
-                        soldiers.Remove(deadSoldier);
+                        Soldier attackedSoldier = soldiers.FirstOrDefault(s => s.Name.Equals(command[1]));
+                        attackedSoldier.TakeAttack();
                         break;
 
                     case "Attack":
