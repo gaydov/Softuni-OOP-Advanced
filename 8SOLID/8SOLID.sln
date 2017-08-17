@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Recharge", "Recharge\Rechar
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SecurityDoor", "SecurityDoor\SecurityDoor.csproj", "{3A2747BD-BE0D-48C2-A298-8B323D5CA6A3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoggerPgm", "LoggerPgm\LoggerPgm.csproj", "{AF522ABE-07E3-4184-932A-670689E613E9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{3A2747BD-BE0D-48C2-A298-8B323D5CA6A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3A2747BD-BE0D-48C2-A298-8B323D5CA6A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3A2747BD-BE0D-48C2-A298-8B323D5CA6A3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AF522ABE-07E3-4184-932A-670689E613E9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AF522ABE-07E3-4184-932A-670689E613E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AF522ABE-07E3-4184-932A-670689E613E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AF522ABE-07E3-4184-932A-670689E613E9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
