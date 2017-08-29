@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Globalization;
 using System.Linq;
 using System.Reflection;
 using BarrackWarsTasks.Attributes;
@@ -23,7 +22,7 @@ namespace BarrackWarsTasks.Core
 
         public IExecutable InterpretCommand(string[] data, string commandName)
         {
-            string fullCommandName = char.ToUpper(commandName[0]) + commandName.Substring(1) + "Command";
+            string fullCommandName = char.ToUpper(commandName[0]) + commandName.Substring(1) + CommandClassSuffix;
 
             Type commandNameType = Assembly
                 .GetExecutingAssembly()

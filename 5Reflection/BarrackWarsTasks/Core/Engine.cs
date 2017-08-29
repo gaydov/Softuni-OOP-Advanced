@@ -1,9 +1,5 @@
 ﻿using System;
-using System.Linq;
-using System.Reflection;
-using BarrackWarsTasks.Attributes;
 using BarrackWarsTasks.Contracts;
-using BarrackWarsTasks.Core.Commands;
 
 namespace BarrackWarsTasks.Core
 {

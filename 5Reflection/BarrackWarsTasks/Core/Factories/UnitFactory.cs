@@ -7,6 +7,8 @@ namespace BarrackWarsTasks.Core.Factories
 {
     public class UnitFactory : IUnitFactory
     {
+        private const string UnitsFolder = "Units";
+
         public IUnit CreateUnit(string unitType)
         {
             // Getting the namespace where the units reside
@@ -16,7 +18,7 @@ namespace BarrackWarsTasks.Core.Factories
                 .Select(t => t.Namespace)
                 .Distinct()
                 .Where(n => n != null)
-                .FirstOrDefault(n => n.Contains("Units"));
+                .FirstOrDefault(n => n.Contains(UnitsFolder));
 
             Type typeOfUnit = Type.GetType($"{unitsNamespace}.{unitType}");
             IUnit instanceOfUnit = (IUnit)Activator.CreateInstance(typeOfUnit);
