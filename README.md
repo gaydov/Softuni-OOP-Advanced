@@ -20,5 +20,5 @@ The course covers:
 4. [Enums and attributes](https://github.com/gaydov/Softuni-OOP-Advanced/tree/master/4EnumsAndAttributes)
 5. [Reflection](https://github.com/gaydov/Softuni-OOP-Advanced/tree/master/5Reflection)
 6. [Unit tests](https://github.com/gaydov/Softuni-OOP-Advanced/tree/master/6UnitTests)
-7. [Object communications and events](https://github.com/gaydov/Softuni-OOP-Advanced/tree/master/7ObjectCommunicationsAndEvents
+7. [Object communications and events](https://github.com/gaydov/Softuni-OOP-Advanced/tree/master/7ObjectCommunicationsAndEvents)
 8. [SOLID](https://github.com/gaydov/Softuni-OOP-Advanced/tree/master/8SOLID)
